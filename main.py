@@ -48,7 +48,7 @@ def main():
             for s in shots:
                 if obj.collides_with(s):
                     log_event("asteroid_shot")
-                    obj.kill()
+                    obj.split()
                     s.kill()
 
         dt = clock.tick(60) / 1000
